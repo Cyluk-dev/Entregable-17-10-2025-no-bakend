@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>entregable - Detalles del Producto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              'brand-gold': '#D4AF7A',
+              'brand-dark': '#111111',
+            }
+          }
+        }
+      }
+    </script>
+     <style>
+      @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+      .animate-fade-in { animation: fade-in 1s ease-out forwards; }
+    </style>
+  </head>
+  <body>
+    <div class="bg-brand-dark text-white font-sans min-h-screen relative overflow-hidden">
+      <img 
+        src="https://entregable.cyluk.com/BG-Hero.svg" 
+        alt="Decoración de fondo" 
+        class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+      />
+      <div class="relative z-10 flex flex-col min-h-screen">
+        <header class="py-6 px-8 lg:px-16 flex justify-between items-center w-full">
+            <div class="flex-1 flex justify-start">
+                <a href="home.html" aria-label="entregable Inicio">
+                    <img src="https://entregable.cyluk.com/logo.svg" alt="entregable Logo" class="h-8" />
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8 tracking-wider text-sm text-gray-400">
+                <a href="home.html" class="hover:text-white transition-colors duration-300">INICIO</a>
+                <a href="shop.html" class="hover:text-white transition-colors duration-300">TIENDA</a>
+                <a href="about.html" class="hover:text-white transition-colors duration-300">NOSOTROS</a>
+                <a href="contact.html" class="hover:text-white transition-colors duration-300">CONTACTO</a>
+            </nav>
+            <div class="flex-1 flex justify-end">
+                <button class="hover:opacity-80 transition-opacity duration-300" aria-label="Cuenta de Usuario">
+                <img src="https://entregable.cyluk.com/user.svg" alt="Icono de Cuenta de Usuario" class="w-6 h-6" />
+                </button>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <section id="product-detail-container" class="py-20 px-8 lg:px-16 animate-fade-in">
+                <!-- Product details will be injected here by JS -->
+            </section>
+        </main>
+        
+         <footer class="bg-black bg-opacity-30 border-t border-gray-800 text-gray-400">
+            <div class="mx-auto px-8 lg:px-16">
+                <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <a href="home.html" aria-label="entregable Inicio">
+                        <img src="https://entregable.cyluk.com/logo.svg" alt="entregable Logo" class="h-8 mb-4" />
+                    </a>
+                    <p class="text-sm max-w-xs">Forjando legados, un reloj a la vez. La cumbre del lujo y la ingeniería de precisión.</p>
+                </div>
+                <div class="md:col-span-1 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                    <h3 class="font-semibold text-white tracking-wider mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="home.html" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="shop.html" class="hover:text-white transition-colors">Tienda</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                    </div>
+                    <div>
+                    <h3 class="font-semibold text-white tracking-wider mb-4">Contáctanos</h3>
+                    <div class="space-y-3 text-sm">
+                        <p>Calle X, a referencia de la Clínica X, a 2 cuadras de la Plaza Principal XYZ</p>
+                        <p>+X XXXXXXXXX</p>
+                        <p>contact@entregable.com</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="py-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-sm gap-4">
+                <p>&copy; 2024 entregable. Todos los Derechos Reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Instagram" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg></a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a>
+                    <a href="#" aria-label="Facebook" class="hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+                </div>
+                </div>
+            </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
